@@ -1,0 +1,12 @@
+.DS_Store
+.vscode
+.htaccess
+wp-config.php
+wp-content/uploads
+list.todo
+.idea
+wp-content/cache
+wp-content/advance-cache.php
+wp-content/wpo-cache
+wp-content/fonts
+wp-content/languages
