@@ -57,4 +57,7 @@
 	.single_step:not(:last-child)::after {
 		right: 40px;
 	}
+	.form_group label {
+		text-align: right;
+	}
 }

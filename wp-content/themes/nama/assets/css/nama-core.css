@@ -312,6 +312,7 @@ textarea:focus {
 	border-radius: 50%;
 	line-height: 152px;
 	margin-bottom: 25px;
+	box-shadow: 1px 5px 26px 0px rgba(39, 131, 131, 0.2);
 }
 
 .feature_inner .feature_img i {
