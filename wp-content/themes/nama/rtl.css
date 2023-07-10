@@ -21,3 +21,26 @@
 	right: 48px;
 	left: auto;
 }
+.faq_content .accordion-item {
+	padding: 40px 40px 30px 80px;
+}
+
+.faq_content .accordion-item .accordion-header::after {
+	left: -40px;
+	right: auto;
+}
+
+.contact_investment_tabs .nav-item {
+	padding-left: 0;
+	padding-right: 15px;
+}
+
+.contact_investment_tabs .nav-item:before {
+	left: 100%;
+	right: auto;
+}
+
+.contact_investment_tabs .nav-item::after {
+	left: auto;
+	right: -26px;
+}
