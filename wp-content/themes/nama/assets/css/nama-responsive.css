@@ -35,10 +35,232 @@
 
 /* Medium devices (tablets, 768px to 991px) */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+	.hero_content .title {
+		font-size: 45px;
+		line-height: 1.1;
+	}
+	.hero_content .text {
+		font-size: 20px;
+	}
+	.feature_inner .feature_img {
+		width: 120px;
+		height: 120px;
+		line-height: 120px;
+		margin-bottom: 10px;
+	}
+	.feature_inner .feature_img img {
+		max-width: 60%;
+	}
+	.feature_inner .feature_text .title {
+		font-size: 20px;
+	}
+	.feature-section {
+		background-size: contain;
+		background-position: center top;
+		background-repeat: no-repeat;
+		padding-top: 20px;
+		padding-bottom: 0;
+		margin-bottom: 0;
+	}
+	h1 {
+		font-size: 45px;
+		line-height: 1.1;
+	}
+	h2 {
+		font-size: 40px;
+		line-height: 1.1;
+	}
+	.section_title .title:before {
+		width: 140px;
+		height: 30px;
+	}
+	.howtowork-img {
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+	}
+	.step_inner .step_text {
+		font-size: 25px;
+		line-height: 1.1;
+	}
+	.howtowotk {
+		padding-bottom: 0;
+		margin-bottom: 0;
+	}
+	.faq-section {
+		margin-top: 70px;
+		padding-bottom: 0;
+		background-size: contain;
+	}
+	.faq-section .section_title .title::before {
+		width: 65px;
+	}
+	.faq_content .accordion-item {
+		padding: 25px 55px 10px 25px;
+	}
+	.faq_content .accordion-item .accordion-header::after {
+		width: 30px;
+		height: 30px;
+		right: -40px;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+	.faq_content .accordion-item .accordion-header {
+		font-size: 18px;
+		line-height: 1.1;
+	}
+	.faq_content .accordion-item .accordion-body {
+		font-size: 17px;
+		line-height: 1.1;
+	}
+	.partners-section {
+		margin-top: 70px;
+		background-size: contain;
+	}
+	.partners-section .section_title .title:before {
+		top: 0;
+		width: 140px;
+	}
+	.contact-investment {
+		margin-top: 70px;
+		padding-bottom: 70px;
+		background-size: 25%;
+	}
+	.section_title p {
+		font-size: 25px;
+		line-height: 1.2;
+	}
 }
 
 /* X-Small devices (small mobile) (portrait phones, less than 767px) */
 @media only screen and (max-width: 767px) {
+	.hero-section {
+		max-height: 100%;
+		height: auto;
+		padding-bottom: 0px;
+	}
+	.hero_img {
+		margin-right: 0px;
+		margin-bottom: 30px;
+	}
+	.hero_content .title {
+		font-size: 35px;
+		line-height: 1.1;
+		margin-bottom: 15px;
+	}
+	.hero_content .text {
+		font-size: 20px;
+	}
+	.hero-section:before,
+	.hero-section:after {
+		display: none;
+	}
+
+	.feature-section {
+		background-size: cover;
+		background-position: center left;
+		background-repeat: no-repeat;
+		padding-top: 20px;
+		padding-bottom: 0;
+		margin-bottom: 0;
+	}
+	.feature_inner .feature_img {
+		width: 120px;
+		height: 120px;
+		line-height: 120px;
+		margin-bottom: 10px;
+	}
+	.feature_inner .feature_img img {
+		max-width: 60%;
+	}
+	.feature_inner .feature_text .title {
+		font-size: 20px;
+	}
+	h1 {
+		font-size: 35px;
+		line-height: 1.1;
+	}
+	h2 {
+		font-size: 30px;
+		line-height: 1.1;
+	}
+	.section_title .title:before {
+		width: 100px;
+		height: 20px;
+	}
+
+	.howtowotk {
+		padding-bottom: 0;
+		margin-bottom: 0;
+	}
+	.howtowork-img {
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+	}
+	.single_step:not(:last-child)::after {
+		left: 40px;
+	}
+	.step_inner .step_icon {
+		max-width: 80px;
+		flex: 0 0 80px;
+		height: 80px;
+		line-height: 80px;
+		margin-right: 20px;
+	}
+	.step_inner .step_icon img {
+		max-width: 60%;
+	}
+	.step_inner .step_text {
+		font-size: 20px;
+		line-height: 1.1;
+	}
+	.faq-section {
+		margin-top: 70px;
+		padding-bottom: 0;
+		background-size: contain;
+	}
+	.faq-section .section_title .title::before {
+		width: 50px;
+	}
+	.faq_content .accordion-item {
+		padding: 25px 55px 10px 25px;
+	}
+	.faq_content .accordion-item .accordion-header::after {
+		width: 30px;
+		height: 30px;
+		right: -40px;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+	.faq_content .accordion-item .accordion-header {
+		font-size: 18px;
+		line-height: 1.1;
+	}
+	.faq_content .accordion-item .accordion-body {
+		font-size: 17px;
+		line-height: 1.1;
+	}
+	.partners-section {
+		margin-top: 70px;
+		background-size: contain;
+	}
+	.partners-section .section_title .title:before {
+		top: 0;
+		width: 90px;
+	}
+	.contact-investment {
+		margin-top: 70px;
+		padding-bottom: 70px;
+		background-size: 25%;
+	}
+	.contact_investment_wrapper .section_title .title {
+		margin-bottom: 15px;
+	}
+	.section_title p {
+		font-size: 20px;
+		line-height: 1.2;
+	}
 }
 
 /* Small devices (large mobile) (landscape phones, 480px to 767px) */

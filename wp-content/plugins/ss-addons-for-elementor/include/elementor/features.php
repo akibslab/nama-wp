@@ -440,7 +440,7 @@ class SS_Features extends Widget_Base {
                 <div class="container">
                     <div class="row">
                         <?php foreach ($features as $key => $feature) : ?>
-                            <div class="col-lg-4">
+                            <div class="col-md-4">
                                 <div class="single_feature">
                                     <div class="feature_inner">
                                         <div class="feature_img">

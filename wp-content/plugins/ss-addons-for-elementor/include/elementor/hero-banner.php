@@ -700,7 +700,7 @@ class SS_Hero_Banner extends Widget_Base {
         <section class="hero-section overflow-hidden">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-lg-7">
+                    <div class="col-md-7 order-2 order-md-1">
                         <div class="hero_content">
                             <?php
                             if (!empty($settings['ss_title'])) :
@@ -722,7 +722,7 @@ class SS_Hero_Banner extends Widget_Base {
                             <?php endif; ?>
                         </div>
                     </div>
-                    <div class="col-lg-5">
+                    <div class="col-md-5 order-1 order-md-2">
                         <?php if (!empty($settings['ss_image']['url'])) : ?>
                             <div class="hero_img">
                                 <img src="<?php echo esc_url($ss_image); ?>" alt="<?php echo esc_attr($ss_image_alt); ?>">
