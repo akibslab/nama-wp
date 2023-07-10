@@ -50,3 +50,8 @@
 		padding: 25px 25px 10px 55px;
 	}
 }
+@media only screen and (max-width: 767px) {
+	.hero_img {
+		margin-left: 0;
+	}
+}
