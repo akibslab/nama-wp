@@ -72,6 +72,7 @@ class ConnectPlugins {
 
 			// Don't add "_elementor_css" meta.
 			add_filter( 'update_post_metadata', array( $this, 'prevent_elementor_css_meta' ), 10, 3 );
+			add_action( 'pll_post_synchronized', array( $this, 'bulk_delete_elementor_css_meta' ), 10, 3 );
 
 			// Edit links for each language domain.
 			if ( cpel_is_polylang_multidomain() ) {
@@ -472,6 +473,24 @@ class ConnectPlugins {
 	}
 
 	/**
+	 * Delete '_elementor_css' meta on Polylang bulk translation
+	 *
+	 * Without this meta Elementor generates the css for the new post.
+	 *
+	 * @since 2.4.3
+	 *
+	 * @param  int $post_id
+	 * @param  int $tr_id
+	 * @param  string $lang
+	 * @return void
+	 */
+	public function bulk_delete_elementor_css_meta( $post_id, $tr_id, $lang ){
+
+		delete_post_meta( $tr_id, '_elementor_css' );
+
+	}
+
+	/**
 	 * Whitelist Elementor Pro home_url()
 	 *
 	 * Polylang add home_url() to whitelist for Elementor Pro
@@ -519,7 +538,7 @@ class ConnectPlugins {
 	 */
 	public function search_form_home_url_filter( $url, $path ) {
 
-		if ( ! function_exists( 'PLL' ) ) {
+		if ( ! function_exists( 'PLL' ) || ! is_a( PLL()->curlang, 'PLL_Language', true ) ) {
 			return $url;
 		}
 

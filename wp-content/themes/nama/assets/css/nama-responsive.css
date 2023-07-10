@@ -245,6 +245,9 @@
 		margin-top: 70px;
 		background-size: contain;
 	}
+	.partners-section .section_title {
+		margin-bottom: 50px;
+	}
 	.partners-section .section_title .title:before {
 		top: 0;
 		width: 90px;
