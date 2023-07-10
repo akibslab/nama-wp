@@ -1,0 +1,23 @@
+.hero_img {
+	margin-right: 0;
+	margin-left: -75px;
+}
+.section_title .title:before {
+	right: 3px;
+	left: auto;
+}
+
+.howtowork-img {
+	margin-left: 0;
+	margin-right: -55px;
+}
+
+.step_inner .step_icon {
+	margin-right: 0;
+	margin-left: 23px;
+}
+
+.single_step:not(:last-child)::after {
+	right: 48px;
+	left: auto;
+}
