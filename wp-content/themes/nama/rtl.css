@@ -54,4 +54,7 @@
 	.hero_img {
 		margin-left: 0;
 	}
+	.single_step:not(:last-child)::after {
+		right: 40px;
+	}
 }
